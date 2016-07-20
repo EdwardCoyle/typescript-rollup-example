@@ -1,0 +1,20 @@
+{
+  "name": "es6-math-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ts": "tsc",
+    "build:rollup": "rollup -c",
+    "build": "npm run build:ts && npm run build:rollup && npm run clean",
+    "clean": "node ./bin/clean.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.34.1",
+    "rollup-plugin-typescript": "^0.7.7",
+    "typescript": "^2.1.0-dev.20160719"
+  }
+}
